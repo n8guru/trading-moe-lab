@@ -1,0 +1,24 @@
+{
+  "algorithm": "sha256",
+  "end": "2023-12-29",
+  "files": {
+    "bars/BIL.csv": "c82959db60ddf12e788b5f4e0b4bb3ba51cf9258bfd353919be1cdd5f39d090d",
+    "bars/EEM.csv": "e69b1aa061555b3360805cb84346955014f952a35bd17b8dc84df31e4eb1ea22",
+    "bars/EFA.csv": "ff279b8863ed15ba86259795b08e3a9b0c52b5cffd0f5a81edc3a45439719bee",
+    "bars/GLD.csv": "9e668ea24c37b6b34d963e5403d5a3b6811a2b53f3b75ca29d8d9cc2f31c5ca6",
+    "bars/IWM.csv": "59838df278abe8ece252534721293b132a8d4120fa55a20a920fe47b3e828fc5",
+    "bars/NEWZ.csv": "91961d3aaebe97ea7c3318f2be0b5dc2b01a21d318eeeb9b4bd9ae8de4d724b8",
+    "bars/OLDZ.csv": "bce62a8f3a1eda96ca7c3b108eaac172df383d6a61e05ac02882f84800eb7798",
+    "bars/QQQ.csv": "f503b7754a2dc9dcc791a8e2f53be75b7109e559de98d2cafcb55a3efd246e57",
+    "bars/SPY.csv": "1d21d886c67c66586d04b20a090c518bed453e94eff3eda0df0e97fadc044929",
+    "bars/TLT.csv": "2be50b28b989d10f118c61c64690d69a213a7e287ef6f9da7710e2022b2e7cff",
+    "bars/VNQ.csv": "369b2a08181c5031746cd9a55eb61b4d8a804383ab5bab65c13776df2ecf8138",
+    "universe.json": "ffd654a4e707717df26cd0ae4532dad0f1ef3e3b5e64514cecbee357c9850cac"
+  },
+  "float_policy_id": "decimal-v0-8dp-half-even",
+  "manifest_id": "e5b655f35ccdc60ef684ebd59290eb2e67035cd5b8236b3f95f1ffa42017be36",
+  "note": "Content-addressed fixture lock. Tests fail if any file is edited.",
+  "seed": "trading-moe-lab-fixture-v0",
+  "start": "2018-01-02",
+  "universe_hash": "ffd654a4e707717df26cd0ae4532dad0f1ef3e3b5e64514cecbee357c9850cac"
+}

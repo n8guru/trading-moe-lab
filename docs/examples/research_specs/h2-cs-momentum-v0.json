@@ -1,0 +1,60 @@
+{
+  "benchmark": "SPY",
+  "cash_vehicle": "BIL",
+  "cost": {
+    "adverse_bps": 5,
+    "bps_1x": 10,
+    "bps_2x": 20,
+    "partial_fill_per_mille": 0
+  },
+  "crash_asset": null,
+  "eval_window": {
+    "end": "2023-12-29",
+    "start": "2018-01-02"
+  },
+  "execution_timing": "NEXT_OPEN",
+  "family": "H2_CS_MOMENTUM",
+  "holdout_window": {
+    "end": "2023-12-29",
+    "start": "2022-01-03"
+  },
+  "lookback_days": 252,
+  "name": "H2 cross-sectional relative momentum top-2",
+  "notes": "Hold top-2 12m TR names among non-cash universe iff each beats BIL 12m; else sleeve to BIL.",
+  "params": {},
+  "rebalance": "MONTHLY",
+  "rebalance_n_days": 5,
+  "research_window": {
+    "end": "2021-12-31",
+    "start": "2018-01-02"
+  },
+  "return_semantic": "TOTAL_RETURN",
+  "risk": {
+    "kill_drawdown": "0.35",
+    "long_only": true,
+    "max_gross_exposure": "1.0",
+    "max_name_weight": "0.55",
+    "unlevered": true,
+    "vol_cap": "1.0",
+    "vol_lookback_days": 20,
+    "vol_target_annual": "0.15"
+  },
+  "risk_assets": [],
+  "schema_version": "1.0.0",
+  "seed": 42,
+  "signal_timing": "PREV_CLOSE",
+  "spec_id": "h2-cs-momentum-v0",
+  "top_k": 2,
+  "universe": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "EFA",
+    "EEM",
+    "TLT",
+    "GLD",
+    "VNQ",
+    "BIL"
+  ],
+  "venue": "LOCAL_SIM"
+}

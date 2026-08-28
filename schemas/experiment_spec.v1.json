@@ -1,0 +1,223 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trading-moe-lab.local/schemas/experiment_spec.v1.json",
+  "title": "ExperimentSpec",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "spec_id",
+    "schema_version",
+    "family",
+    "name",
+    "venue",
+    "universe",
+    "cash_vehicle",
+    "benchmark",
+    "return_semantic",
+    "lookback_days",
+    "rebalance",
+    "signal_timing",
+    "execution_timing",
+    "seed",
+    "cost",
+    "risk",
+    "research_window",
+    "holdout_window",
+    "eval_window"
+  ],
+  "properties": {
+    "spec_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "family": {
+      "enum": [
+        "H1_DUAL_MOMENTUM",
+        "H2_CS_MOMENTUM",
+        "H3_REVERSAL",
+        "BENCHMARK_SPY",
+        "BENCHMARK_EQUAL_WEIGHT",
+        "BENCHMARK_CASH",
+        "RESEARCH"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "venue": {
+      "enum": [
+        "LOCAL_SIM",
+        "PAPER"
+      ]
+    },
+    "universe": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "cash_vehicle": {
+      "type": "string"
+    },
+    "benchmark": {
+      "type": "string"
+    },
+    "return_semantic": {
+      "const": "TOTAL_RETURN"
+    },
+    "lookback_days": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 2000
+    },
+    "rebalance": {
+      "enum": [
+        "DAILY",
+        "EVERY_N_DAYS",
+        "MONTHLY"
+      ]
+    },
+    "rebalance_n_days": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "signal_timing": {
+      "const": "PREV_CLOSE"
+    },
+    "execution_timing": {
+      "const": "NEXT_OPEN"
+    },
+    "top_k": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "risk_assets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "crash_asset": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bps_1x": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bps_2x": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "adverse_bps": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "partial_fill_per_mille": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_gross_exposure": {
+          "type": "string"
+        },
+        "max_name_weight": {
+          "type": "string"
+        },
+        "kill_drawdown": {
+          "type": "string"
+        },
+        "long_only": {
+          "const": true
+        },
+        "unlevered": {
+          "const": true
+        },
+        "vol_target_annual": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vol_lookback_days": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "vol_cap": {
+          "type": "string"
+        }
+      }
+    },
+    "research_window": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        }
+      }
+    },
+    "holdout_window": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        }
+      }
+    },
+    "eval_window": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        }
+      }
+    },
+    "params": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

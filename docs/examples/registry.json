@@ -1,0 +1,151 @@
+{
+  "audit_tip": "ebb00a7917259c090eaf227299d16d19b637b722caa2b5e0cd693057b0b1ae20",
+  "champion": null,
+  "holdout_leases": [],
+  "trials": [
+    {
+      "created_ts": "2026-08-28T09:32:37Z",
+      "family": "H1_DUAL_MOMENTUM",
+      "metrics_json": "{\"cagr\":\"-0.08486692\",\"display_float64\":{\"cagr\":-0.08486691708676868,\"hit_rate\":0.5604606525911708,\"max_drawdown\":0.5545770323893763,\"sharpe\":-0.8672127666668604,\"total_return\":-0.41199629667307,\"turnover_annualized\":3.915048401545602},\"hit_rate\":\"0.56046065\",\"max_drawdown\":\"0.55457703\",\"n_fills\":886,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.86721277\",\"total_return\":\"-0.41199630\",\"turnover_annualized\":\"3.91504840\"}",
+      "notes": "pre-registered bake-off 1x",
+      "source": "run_bakeoff",
+      "spec_hash": "5e8e0b937fd83c1bad3bff50a1bf9b3bfe9245a51c2e23c5d8c7fadd4784cc61",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":0},\"crash_asset\":\"TLT\",\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"H1_DUAL_MOMENTUM\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":252,\"name\":\"H1 dual momentum (absolute + relative, Antonacci-style method)\",\"notes\":\"Relative winner of SPY vs EFA; hold winner only if 12m TR > BIL; else TLT if TLT 12m > BIL else BIL. Vol targeting scale-down only. Citation is methodological (Antonacci GEM), not a performance claim.\",\"params\":{},\"rebalance\":\"MONTHLY\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.35\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"1.0\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":\"0.12\"},\"risk_assets\":[\"SPY\",\"EFA\"],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"h1-dual-momentum-v0\",\"top_k\":1,\"universe\":[\"SPY\",\"EFA\",\"TLT\",\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-H1-1x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:38Z",
+      "family": "H1_DUAL_MOMENTUM",
+      "metrics_json": "{\"cagr\":\"-0.08796100\",\"display_float64\":{\"cagr\":-0.08796100026050424,\"hit_rate\":0.5598208573256558,\"max_drawdown\":0.5596128478424693,\"sharpe\":-0.8960730708697111,\"total_return\":-0.4238001968216528,\"turnover_annualized\":3.922359725566505},\"hit_rate\":\"0.55982086\",\"max_drawdown\":\"0.55961285\",\"n_fills\":870,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.89607307\",\"total_return\":\"-0.42380020\",\"turnover_annualized\":\"3.92235973\"}",
+      "notes": "pre-registered bake-off 2x",
+      "source": "run_bakeoff",
+      "spec_hash": "5e8e0b937fd83c1bad3bff50a1bf9b3bfe9245a51c2e23c5d8c7fadd4784cc61",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":0},\"crash_asset\":\"TLT\",\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"H1_DUAL_MOMENTUM\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":252,\"name\":\"H1 dual momentum (absolute + relative, Antonacci-style method)\",\"notes\":\"Relative winner of SPY vs EFA; hold winner only if 12m TR > BIL; else TLT if TLT 12m > BIL else BIL. Vol targeting scale-down only. Citation is methodological (Antonacci GEM), not a performance claim.\",\"params\":{},\"rebalance\":\"MONTHLY\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.35\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"1.0\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":\"0.12\"},\"risk_assets\":[\"SPY\",\"EFA\"],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"h1-dual-momentum-v0\",\"top_k\":1,\"universe\":[\"SPY\",\"EFA\",\"TLT\",\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-H1-2x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:39Z",
+      "family": "H2_CS_MOMENTUM",
+      "metrics_json": "{\"cagr\":\"-0.06116937\",\"display_float64\":{\"cagr\":-0.06116936654363205,\"hit_rate\":0.3915547024952015,\"max_drawdown\":0.45501134176937064,\"sharpe\":-0.8475619490415384,\"total_return\":-0.3147307478864,\"turnover_annualized\":3.771134862302028},\"hit_rate\":\"0.39155470\",\"max_drawdown\":\"0.45501134\",\"n_fills\":1299,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.84756195\",\"total_return\":\"-0.31473075\",\"turnover_annualized\":\"3.77113486\"}",
+      "notes": "pre-registered bake-off 1x",
+      "source": "run_bakeoff",
+      "spec_hash": "66595bea68eae7d5464d82450f771fc945268b3a720c7e62af9921f77a361d0c",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":0},\"crash_asset\":null,\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"H2_CS_MOMENTUM\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":252,\"name\":\"H2 cross-sectional relative momentum top-2\",\"notes\":\"Hold top-2 12m TR names among non-cash universe iff each beats BIL 12m; else sleeve to BIL.\",\"params\":{},\"rebalance\":\"MONTHLY\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.35\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"0.55\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":\"0.15\"},\"risk_assets\":[],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"h2-cs-momentum-v0\",\"top_k\":2,\"universe\":[\"SPY\",\"QQQ\",\"IWM\",\"EFA\",\"EEM\",\"TLT\",\"GLD\",\"VNQ\",\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-H2-1x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:40Z",
+      "family": "H2_CS_MOMENTUM",
+      "metrics_json": "{\"cagr\":\"-0.05582395\",\"display_float64\":{\"cagr\":-0.05582395233855007,\"hit_rate\":0.3941138835572617,\"max_drawdown\":0.4437762690273996,\"sharpe\":-0.6550949527217832,\"total_return\":-0.2910342932932,\"turnover_annualized\":3.6294697034484407},\"hit_rate\":\"0.39411388\",\"max_drawdown\":\"0.44377627\",\"n_fills\":1281,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.65509495\",\"total_return\":\"-0.29103429\",\"turnover_annualized\":\"3.62946970\"}",
+      "notes": "pre-registered bake-off 2x",
+      "source": "run_bakeoff",
+      "spec_hash": "66595bea68eae7d5464d82450f771fc945268b3a720c7e62af9921f77a361d0c",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":0},\"crash_asset\":null,\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"H2_CS_MOMENTUM\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":252,\"name\":\"H2 cross-sectional relative momentum top-2\",\"notes\":\"Hold top-2 12m TR names among non-cash universe iff each beats BIL 12m; else sleeve to BIL.\",\"params\":{},\"rebalance\":\"MONTHLY\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.35\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"0.55\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":\"0.15\"},\"risk_assets\":[],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"h2-cs-momentum-v0\",\"top_k\":2,\"universe\":[\"SPY\",\"QQQ\",\"IWM\",\"EFA\",\"EEM\",\"TLT\",\"GLD\",\"VNQ\",\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-H2-2x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:41Z",
+      "family": "H3_REVERSAL",
+      "metrics_json": "{\"cagr\":\"-0.09103173\",\"display_float64\":{\"cagr\":-0.09103173353631244,\"hit_rate\":0.4708893154190659,\"max_drawdown\":0.5872168449487092,\"sharpe\":-0.4720349534239395,\"total_return\":-0.4353191980782,\"turnover_annualized\":17.476176238907673},\"hit_rate\":\"0.47088932\",\"max_drawdown\":\"0.58721684\",\"n_fills\":709,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.47203495\",\"total_return\":\"-0.43531920\",\"turnover_annualized\":\"17.47617624\"}",
+      "notes": "pre-registered bake-off 1x",
+      "source": "run_bakeoff",
+      "spec_hash": "cad30f9295536909b9644f32c06965972cc9b53a542c519248051dd4b54722a5",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":80},\"crash_asset\":null,\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"H3_REVERSAL\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":5,\"name\":\"H3 2-5 day reversal (tiny quota; expected INCONCLUSIVE)\",\"notes\":\"Buy the two worst 5-session TR names, rebalance every 5 sessions. High turnover plus 10\\u201320 bps costs plus adverse/partial fills. Pre-registered expected outcome: INCONCLUSIVE / FAIL after costs. Tiny familywise quota.\",\"params\":{},\"rebalance\":\"EVERY_N_DAYS\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.35\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"0.55\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":null},\"risk_assets\":[],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"h3-reversal-2to5d-v0\",\"top_k\":2,\"universe\":[\"SPY\",\"QQQ\",\"IWM\",\"EFA\",\"EEM\",\"VNQ\",\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-H3-1x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:43Z",
+      "family": "H3_REVERSAL",
+      "metrics_json": "{\"cagr\":\"-0.11165622\",\"display_float64\":{\"cagr\":-0.11165622252050778,\"hit_rate\":0.4638515674984005,\"max_drawdown\":0.6139117298697093,\"sharpe\":-0.6086028263474057,\"total_return\":-0.5078246193054,\"turnover_annualized\":17.842147723983942},\"hit_rate\":\"0.46385157\",\"max_drawdown\":\"0.61391173\",\"n_fills\":642,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.60860283\",\"total_return\":\"-0.50782462\",\"turnover_annualized\":\"17.84214772\"}",
+      "notes": "pre-registered bake-off 2x",
+      "source": "run_bakeoff",
+      "spec_hash": "cad30f9295536909b9644f32c06965972cc9b53a542c519248051dd4b54722a5",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":80},\"crash_asset\":null,\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"H3_REVERSAL\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":5,\"name\":\"H3 2-5 day reversal (tiny quota; expected INCONCLUSIVE)\",\"notes\":\"Buy the two worst 5-session TR names, rebalance every 5 sessions. High turnover plus 10\\u201320 bps costs plus adverse/partial fills. Pre-registered expected outcome: INCONCLUSIVE / FAIL after costs. Tiny familywise quota.\",\"params\":{},\"rebalance\":\"EVERY_N_DAYS\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.35\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"0.55\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":null},\"risk_assets\":[],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"h3-reversal-2to5d-v0\",\"top_k\":2,\"universe\":[\"SPY\",\"QQQ\",\"IWM\",\"EFA\",\"EEM\",\"VNQ\",\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-H3-2x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:44Z",
+      "family": "BENCHMARK_SPY",
+      "metrics_json": "{\"cagr\":\"-0.07554013\",\"display_float64\":{\"cagr\":-0.07554013216213637,\"hit_rate\":0.48112603966730644,\"max_drawdown\":0.5580349024353314,\"sharpe\":-0.46592571934221116,\"total_return\":-0.3751890306446939,\"turnover_annualized\":0.1993312308876408},\"hit_rate\":\"0.48112604\",\"max_drawdown\":\"0.55803490\",\"n_fills\":2,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.46592572\",\"total_return\":\"-0.37518903\",\"turnover_annualized\":\"0.19933123\"}",
+      "notes": "pre-registered bake-off 1x",
+      "source": "run_bakeoff",
+      "spec_hash": "ae8fec069b71b301472f7c87e82b6e6af24cbc13c402413f7c621bfdec81bcf2",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":0},\"crash_asset\":null,\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"BENCHMARK_SPY\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":2,\"name\":\"Buy and hold SPY\",\"notes\":\"Benchmark. Kill threshold is intentionally high so the benchmark is not frozen.\",\"params\":{},\"rebalance\":\"MONTHLY\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.90\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"1.0\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":null},\"risk_assets\":[],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"bench-spy-buyhold-v0\",\"top_k\":1,\"universe\":[\"SPY\",\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-SPY-1x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:44Z",
+      "family": "BENCHMARK_SPY",
+      "metrics_json": "{\"cagr\":\"-0.07553004\",\"display_float64\":{\"cagr\":-0.0755300427938399,\"hit_rate\":0.48112603966730644,\"max_drawdown\":0.5579829503820445,\"sharpe\":-0.4659500246598067,\"total_return\":-0.3751481991820482,\"turnover_annualized\":0.19929943431592095},\"hit_rate\":\"0.48112604\",\"max_drawdown\":\"0.55798295\",\"n_fills\":1,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.46595002\",\"total_return\":\"-0.37514820\",\"turnover_annualized\":\"0.19929943\"}",
+      "notes": "pre-registered bake-off 2x",
+      "source": "run_bakeoff",
+      "spec_hash": "ae8fec069b71b301472f7c87e82b6e6af24cbc13c402413f7c621bfdec81bcf2",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":0},\"crash_asset\":null,\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"BENCHMARK_SPY\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":2,\"name\":\"Buy and hold SPY\",\"notes\":\"Benchmark. Kill threshold is intentionally high so the benchmark is not frozen.\",\"params\":{},\"rebalance\":\"MONTHLY\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.90\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"1.0\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":null},\"risk_assets\":[],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"bench-spy-buyhold-v0\",\"top_k\":1,\"universe\":[\"SPY\",\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-SPY-2x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:46Z",
+      "family": "BENCHMARK_EQUAL_WEIGHT",
+      "metrics_json": "{\"cagr\":\"-0.02974066\",\"display_float64\":{\"cagr\":-0.029740663126041806,\"hit_rate\":0.4888035828534869,\"max_drawdown\":0.4546082807643582,\"sharpe\":-0.3179937213584559,\"total_return\":-0.16538049427153825,\"turnover_annualized\":1.3558555069670315},\"hit_rate\":\"0.48880358\",\"max_drawdown\":\"0.45460828\",\"n_fills\":10166,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.31799372\",\"total_return\":\"-0.16538049\",\"turnover_annualized\":\"1.35585551\"}",
+      "notes": "pre-registered bake-off 1x",
+      "source": "run_bakeoff",
+      "spec_hash": "4359191139b4954fd53bb82a3660ae8e57feeba7d1886657c247500f57432bca",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":0},\"crash_asset\":null,\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"BENCHMARK_EQUAL_WEIGHT\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":2,\"name\":\"Equal-weight allowlisted non-cash ETFs\",\"notes\":\"\",\"params\":{},\"rebalance\":\"MONTHLY\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.90\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"0.20\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":null},\"risk_assets\":[],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"bench-equal-weight-v0\",\"top_k\":2,\"universe\":[\"SPY\",\"QQQ\",\"IWM\",\"EFA\",\"EEM\",\"TLT\",\"GLD\",\"VNQ\",\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-EW-1x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:47Z",
+      "family": "BENCHMARK_EQUAL_WEIGHT",
+      "metrics_json": "{\"cagr\":\"-0.03095287\",\"display_float64\":{\"cagr\":-0.03095286636212631,\"hit_rate\":0.48816378758797185,\"max_drawdown\":0.45647180115065406,\"sharpe\":-0.32759093288193253,\"total_return\":-0.17160466796682058,\"turnover_annualized\":1.3535999502243354},\"hit_rate\":\"0.48816379\",\"max_drawdown\":\"0.45647180\",\"n_fills\":10151,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.32759093\",\"total_return\":\"-0.17160467\",\"turnover_annualized\":\"1.35359995\"}",
+      "notes": "pre-registered bake-off 2x",
+      "source": "run_bakeoff",
+      "spec_hash": "4359191139b4954fd53bb82a3660ae8e57feeba7d1886657c247500f57432bca",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":0},\"crash_asset\":null,\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"BENCHMARK_EQUAL_WEIGHT\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":2,\"name\":\"Equal-weight allowlisted non-cash ETFs\",\"notes\":\"\",\"params\":{},\"rebalance\":\"MONTHLY\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.90\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"0.20\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":null},\"risk_assets\":[],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"bench-equal-weight-v0\",\"top_k\":2,\"universe\":[\"SPY\",\"QQQ\",\"IWM\",\"EFA\",\"EEM\",\"TLT\",\"GLD\",\"VNQ\",\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-EW-2x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:48Z",
+      "family": "BENCHMARK_CASH",
+      "metrics_json": "{\"cagr\":\"0.01957050\",\"display_float64\":{\"cagr\":0.01957049957366509,\"hit_rate\":0.8055022392834293,\"max_drawdown\":0.001167031923050221,\"sharpe\":-0.8939817676924687,\"total_return\":0.12305199262353565,\"turnover_annualized\":0.15417137472995365},\"hit_rate\":\"0.80550224\",\"max_drawdown\":\"0.00116703\",\"n_fills\":2,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-0.89398177\",\"total_return\":\"0.12305199\",\"turnover_annualized\":\"0.15417137\"}",
+      "notes": "pre-registered bake-off 1x",
+      "source": "run_bakeoff",
+      "spec_hash": "a874da4534678bb95e5b286790e75c3773ab2b8dec6ade08a12efc9f50fe7403",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":0},\"crash_asset\":null,\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"BENCHMARK_CASH\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":2,\"name\":\"100% BIL cash vehicle\",\"notes\":\"\",\"params\":{},\"rebalance\":\"MONTHLY\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.90\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"1.0\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":null},\"risk_assets\":[],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"bench-cash-bil-v0\",\"top_k\":1,\"universe\":[\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-CASH-1x"
+    },
+    {
+      "created_ts": "2026-08-28T09:32:48Z",
+      "family": "BENCHMARK_CASH",
+      "metrics_json": "{\"cagr\":\"0.01957050\",\"display_float64\":{\"cagr\":0.019570501571616036,\"hit_rate\":0.8055022392834293,\"max_drawdown\":0.0011670209432147179,\"sharpe\":-14.349968703129445,\"total_return\":0.123052005800822,\"turnover_annualized\":0.15417004285769242},\"hit_rate\":\"0.80550224\",\"max_drawdown\":\"0.00116702\",\"n_fills\":1,\"n_sessions\":1564,\"rf_declaration\":\"Sharpe uses excess daily total return versus the BIL cash-vehicle TR series on the same fixture calendar. When BIL is missing, RF = 0 (declared).\",\"rf_used\":\"BIL\",\"sharpe\":\"-14.34996870\",\"total_return\":\"0.12305201\",\"turnover_annualized\":\"0.15417004\"}",
+      "notes": "pre-registered bake-off 2x",
+      "source": "run_bakeoff",
+      "spec_hash": "a874da4534678bb95e5b286790e75c3773ab2b8dec6ade08a12efc9f50fe7403",
+      "spec_json": "{\"benchmark\":\"SPY\",\"cash_vehicle\":\"BIL\",\"cost\":{\"adverse_bps\":5,\"bps_1x\":10,\"bps_2x\":20,\"partial_fill_per_mille\":0},\"crash_asset\":null,\"eval_window\":{\"end\":\"2023-12-29\",\"start\":\"2018-01-02\"},\"execution_timing\":\"NEXT_OPEN\",\"family\":\"BENCHMARK_CASH\",\"holdout_window\":{\"end\":\"2023-12-29\",\"start\":\"2022-01-03\"},\"lookback_days\":2,\"name\":\"100% BIL cash vehicle\",\"notes\":\"\",\"params\":{},\"rebalance\":\"MONTHLY\",\"rebalance_n_days\":5,\"research_window\":{\"end\":\"2021-12-31\",\"start\":\"2018-01-02\"},\"return_semantic\":\"TOTAL_RETURN\",\"risk\":{\"kill_drawdown\":\"0.90\",\"long_only\":true,\"max_gross_exposure\":\"1.0\",\"max_name_weight\":\"1.0\",\"unlevered\":true,\"vol_cap\":\"1.0\",\"vol_lookback_days\":20,\"vol_target_annual\":null},\"risk_assets\":[],\"schema_version\":\"1.0.0\",\"seed\":42,\"signal_timing\":\"PREV_CLOSE\",\"spec_id\":\"bench-cash-bil-v0\",\"top_k\":1,\"universe\":[\"BIL\"],\"venue\":\"LOCAL_SIM\"}",
+      "split": "bakeoff_eval",
+      "status": "REGISTERED",
+      "trial_id": "bakeoff-CASH-2x"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "venue": "LOCAL_SIM",
+  "offline": true,
+  "cycles": 2,
+  "expert_calls": 24,
+  "elapsed_seconds": 0.006440545999794267,
+  "accepted": [
+    {
+      "spec_id": "h1-dual-momentum-v0",
+      "family": "H1_DUAL_MOMENTUM",
+      "hash": "5e8e0b937fd83c1bad3bff50a1bf9b3bfe9245a51c2e23c5d8c7fadd4784cc61"
+    },
+    {
+      "spec_id": "h2-cs-momentum-v0",
+      "family": "H2_CS_MOMENTUM",
+      "hash": "66595bea68eae7d5464d82450f771fc945268b3a720c7e62af9921f77a361d0c"
+    },
+    {
+      "spec_id": "h3-reversal-2to5d-v0",
+      "family": "H3_REVERSAL",
+      "hash": "cad30f9295536909b9644f32c06965972cc9b53a542c519248051dd4b54722a5"
+    },
+    {
+      "spec_id": "h1-dual-momentum-vol10-v0",
+      "family": "H1_DUAL_MOMENTUM",
+      "hash": "c4d219886d9c72b48588ea624c20380d3d7eef3edaef61e37544705975407190"
+    },
+    {
+      "spec_id": "h1-dual-momentum-cost-annotated-v0",
+      "family": "H1_DUAL_MOMENTUM",
+      "hash": "e20b0bbf818e9e222b8a20e1db8b92bb21391a71769e4c01cc91ba61c0ddaf10"
+    },
+    {
+      "spec_id": "h1-dual-momentum-126d-v0",
+      "family": "H1_DUAL_MOMENTUM",
+      "hash": "2f1f70d62dc6103747eb5e80ee04c100d179ca938643218025f3ab2944632a37"
+    }
+  ],
+  "rejected": [
+    {
+      "cycle": 0,
+      "title": "H1 look-ahead cheat (must reject)",
+      "family": "H1_DUAL_MOMENTUM",
+      "reasons": [
+        "look-ahead knob look_ahead_days=21",
+        "look-ahead knob use_future_returns=True",
+        "look-ahead / future returns in params"
+      ]
+    }
+  ],
+  "critiques": [
+    {
+      "cycle": 0,
+      "expert": "CostStressExpert",
+      "target": "H1 dual momentum frozen",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 0,
+      "expert": "CostStressExpert",
+      "target": "H2 cross-sectional momentum frozen",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 0,
+      "expert": "CostStressExpert",
+      "target": "H1 look-ahead cheat (must reject)",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 0,
+      "expert": "CostStressExpert",
+      "target": "H3 5-day reversal frozen",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 0,
+      "expert": "CostStressExpert",
+      "target": "H1 vol-target 10%",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 0,
+      "expert": "CostStressExpert",
+      "target": "H1 with explicit 2x-cost survival requirement",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 0,
+      "expert": "CritiqueExpert",
+      "target": "H1 dual momentum frozen",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 0,
+      "expert": "CritiqueExpert",
+      "target": "H2 cross-sectional momentum frozen",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 0,
+      "expert": "CritiqueExpert",
+      "target": "H1 look-ahead cheat (must reject)",
+      "severity": "REJECT",
+      "issues": [
+        "look-ahead knob look_ahead_days=21",
+        "look-ahead knob use_future_returns=True",
+        "look-ahead / future returns in params"
+      ],
+      "accept": false
+    },
+    {
+      "cycle": 0,
+      "expert": "CritiqueExpert",
+      "target": "H3 5-day reversal frozen",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 0,
+      "expert": "CritiqueExpert",
+      "target": "H1 vol-target 10%",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 0,
+      "expert": "CritiqueExpert",
+      "target": "H1 with explicit 2x-cost survival requirement",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CostStressExpert",
+      "target": "H1 dual momentum frozen",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CostStressExpert",
+      "target": "H2 cross-sectional momentum frozen",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CostStressExpert",
+      "target": "H1 126d lookback variant",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CostStressExpert",
+      "target": "H3 5-day reversal frozen",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CostStressExpert",
+      "target": "H1 vol-target 10%",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CostStressExpert",
+      "target": "H1 with explicit 2x-cost survival requirement",
+      "severity": "INFO",
+      "issues": [
+        "cost knobs match bake-off 10/20 bps + 5 bps adverse"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CritiqueExpert",
+      "target": "H1 dual momentum frozen",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CritiqueExpert",
+      "target": "H2 cross-sectional momentum frozen",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CritiqueExpert",
+      "target": "H1 126d lookback variant",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CritiqueExpert",
+      "target": "H3 5-day reversal frozen",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CritiqueExpert",
+      "target": "H1 vol-target 10%",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    },
+    {
+      "cycle": 1,
+      "expert": "CritiqueExpert",
+      "target": "H1 with explicit 2x-cost survival requirement",
+      "severity": "INFO",
+      "issues": [
+        "no material PIT / look-ahead / universe issues"
+      ],
+      "accept": true
+    }
+  ],
+  "notes": [
+    "skip duplicate spec_id h1-dual-momentum-v0 in later cycle",
+    "skip duplicate spec_id h2-cs-momentum-v0 in later cycle",
+    "skip duplicate spec_id h3-reversal-2to5d-v0 in later cycle",
+    "skip duplicate spec_id h1-dual-momentum-vol10-v0 in later cycle",
+    "skip duplicate spec_id h1-dual-momentum-cost-annotated-v0 in later cycle"
+  ],
+  "registry_audit_tip": "9393a718517dbd66322f74beb7d5c7a4f1766b23799dbc9ddbcb8c9d6211b974",
+  "claim": "Research produced typed specs only. No orders were placed."
+}

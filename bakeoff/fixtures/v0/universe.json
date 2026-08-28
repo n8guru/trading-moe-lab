@@ -1,0 +1,98 @@
+{
+  "benchmark": "SPY",
+  "calendar": "weekday-union-of-fixture-bars",
+  "cash_vehicle": "BIL",
+  "members": [
+    {
+      "allowlisted": true,
+      "asset_class": "equity_us_large",
+      "delist": null,
+      "inception": "1993-01-22",
+      "note": "",
+      "symbol": "SPY"
+    },
+    {
+      "allowlisted": true,
+      "asset_class": "equity_us_nasdaq",
+      "delist": null,
+      "inception": "1999-03-10",
+      "note": "",
+      "symbol": "QQQ"
+    },
+    {
+      "allowlisted": true,
+      "asset_class": "equity_us_small",
+      "delist": null,
+      "inception": "2000-05-22",
+      "note": "",
+      "symbol": "IWM"
+    },
+    {
+      "allowlisted": true,
+      "asset_class": "equity_eafe",
+      "delist": null,
+      "inception": "2001-08-14",
+      "note": "",
+      "symbol": "EFA"
+    },
+    {
+      "allowlisted": true,
+      "asset_class": "equity_em",
+      "delist": null,
+      "inception": "2003-04-11",
+      "note": "",
+      "symbol": "EEM"
+    },
+    {
+      "allowlisted": true,
+      "asset_class": "bond_us_long",
+      "delist": null,
+      "inception": "2002-07-30",
+      "note": "",
+      "symbol": "TLT"
+    },
+    {
+      "allowlisted": true,
+      "asset_class": "commodity_gold",
+      "delist": null,
+      "inception": "2004-11-18",
+      "note": "",
+      "symbol": "GLD"
+    },
+    {
+      "allowlisted": true,
+      "asset_class": "equity_us_reit",
+      "delist": null,
+      "inception": "2004-09-29",
+      "note": "",
+      "symbol": "VNQ"
+    },
+    {
+      "allowlisted": true,
+      "asset_class": "cash_tbill",
+      "delist": null,
+      "inception": "2007-05-30",
+      "note": "",
+      "symbol": "BIL"
+    },
+    {
+      "allowlisted": false,
+      "asset_class": "equity_us_delisted_probe",
+      "delist": "2020-06-01",
+      "inception": "2010-01-04",
+      "note": "synthetic PIT delist probe \u2014 not in H1/H2/H3",
+      "symbol": "OLDZ"
+    },
+    {
+      "allowlisted": false,
+      "asset_class": "equity_us_inception_probe",
+      "delist": null,
+      "inception": "2021-01-04",
+      "note": "synthetic PIT inception probe \u2014 not in H1/H2/H3",
+      "symbol": "NEWZ"
+    }
+  ],
+  "name": "us-liquid-etf-v0",
+  "note": "Synthetic TR bars for bake-off. Not vendor market data. OLDZ/NEWZ exist only to lock PIT inception/delist behavior.",
+  "return_semantic": "TOTAL_RETURN"
+}

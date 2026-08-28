@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trading-moe-lab"
+version = "0.1.0"
+description = "Paper-only US ETF research lab with a Mixture-of-Experts research zone and a deterministic LOCAL_SIM engine."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "trading-moe-lab contributors" }]
+# Stdlib-first: no runtime third-party dependencies. Charts are SVG/PNG via zlib.
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+tmoe = "trading_moe_lab.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/n8guru/trading-moe-lab"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+trading_moe_lab = ["py.typed"]
